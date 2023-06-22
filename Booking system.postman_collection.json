@@ -1,0 +1,55 @@
+{
+	"info": {
+		"_postman_id": "5a35698b-bfa1-4947-9176-c64dc0065811",
+		"name": "Booking system",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "26769302"
+	},
+	"item": [
+		{
+			"name": "Create booking",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\":\"shyam\",\n    \"email\":\"shyam@gmail.com\",\n    \"phone_number\":\"7005458322\",\n    \"seat_id\":[50, 51]\n\n\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "localhost:8000/booking"
+			},
+			"response": []
+		},
+		{
+			"name": "Retrieve booking by user identifier (email or phone number)",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "localhost:8080/booking/9612118870"
+			},
+			"response": []
+		},
+		{
+			"name": "Get all Sesats",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "localhost:8080/seats"
+			},
+			"response": []
+		},
+		{
+			"name": "Get seat pricing by seat id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "localhost:8080/seats/12"
+			},
+			"response": []
+		}
+	]
+}
